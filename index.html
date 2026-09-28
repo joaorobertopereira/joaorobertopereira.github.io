@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Roberto Pereira | Tech Lead & Senior Software Engineer</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        gray: {
+                            950: '#0a0a0a',
+                            900: '#171717',
+                            800: '#262626',
+                            700: '#404040',
+                            400: '#a3a3a3',
+                            300: '#d4d4d4',
+                            100: '#f5f5f5',
+                        },
+                        accent: {
+                            light: '#38bdf8', // Light blue for subtle highlights
+                            DEFAULT: '#0ea5e9',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Efeitos suaves adicionais */
+        .project-card {
+            transition: all 0.2s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -10px rgba(14, 165, 233, 0.15);
+            border-color: #404040;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-300 font-sans antialiased selection:bg-accent selection:text-white flex flex-col min-h-screen">
+
+    <!-- Container Principal -->
+    <main class="flex-grow max-w-4xl mx-auto px-6 py-16 sm:py-24 w-full">
+        
+        <!-- Seção Hero (Apresentação) -->
+        <header class="mb-20">
+            <div class="flex items-center gap-2 mb-4">
+                <div class="h-1 w-8 bg-accent rounded-full"></div>
+                <span class="text-accent font-medium tracking-wider text-sm uppercase">Portfólio Técnico</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-100 mb-4 tracking-tight">
+                João Roberto Pereira
+            </h1>
+            
+            <h2 class="text-xl sm:text-2xl text-gray-400 font-medium mb-8">
+                Tech Lead & Engenheiro de Software Sênior
+            </h2>
+            
+            <p class="text-lg leading-relaxed text-gray-400 max-w-2xl">
+                Sistemas quebram quando evitam perguntas difíceis na base. Especialista em Java, Kotlin e .NET, construo as estruturas invisíveis de alta performance que blindam negócios contra falhas de planejamento e gargalos técnicos. Foco em microsserviços, Cloud (AWS/GCP) e resolução de ineficiências em escala corporativa.
+            </p>
+        </header>
+
+        <!-- Seção de Projetos -->
+        <section>
+            <div class="flex items-center justify-between mb-8">
+                <h3 class="text-2xl font-semibold text-gray-100">Projetos em Destaque</h3>
+                <a href="https://github.com/joaorobertopereira" target="_blank" rel="noopener noreferrer" class="text-sm text-gray-400 hover:text-accent transition-colors flex items-center gap-2">
+                    Ver todos no GitHub
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </a>
+            </div>
+
+            <!-- Grade de Projetos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- PROJETO 1: Template Spring Boot -->
+                <!-- Para adicionar mais projetos no futuro, copie todo este bloco <a> até o seu fechamento -->
+                <a href="https://github.com/joaorobertopereira/template-spring-boot" target="_blank" rel="noopener noreferrer" class="project-card group block p-6 bg-gray-900 border border-gray-800 rounded-xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-2 bg-gray-800 rounded-lg text-gray-100 group-hover:text-accent transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-600 group-hover:text-gray-300 transition-colors"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-100 mb-2 group-hover:text-accent transition-colors">Template Spring Boot</h4>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">
+                        Template base padronizado para microsserviços e APIs RESTful, visando consistência arquitetural e aceleração no setup de novos serviços.
+                    </p>
+                    <div class="flex gap-2 mt-auto">
+                        <span class="inline-flex items-center rounded-md bg-gray-800 px-2 py-1 text-xs font-medium text-gray-300 ring-1 ring-inset ring-gray-700/50">Java</span>
+                        <span class="inline-flex items-center rounded-md bg-gray-800 px-2 py-1 text-xs font-medium text-gray-300 ring-1 ring-inset ring-gray-700/50">Spring Boot</span>
+                        <span class="inline-flex items-center rounded-md bg-gray-800 px-2 py-1 text-xs font-medium text-gray-300 ring-1 ring-inset ring-gray-700/50">API</span>
+                    </div>
+                </a>
+                <!-- FIM PROJETO 1 -->
+
+                <!-- PROJETO 2: API GitHub -->
+                <a href="https://github.com/joaorobertopereira/api-github" target="_blank" rel="noopener noreferrer" class="project-card group block p-6 bg-gray-900 border border-gray-800 rounded-xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-2 bg-gray-800 rounded-lg text-gray-100 group-hover:text-accent transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-600 group-hover:text-gray-300 transition-colors"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-100 mb-2 group-hover:text-accent transition-colors">API GitHub</h4>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">
+                        Integração estruturada para consumo e processamento da API do GitHub. Focado em boas práticas de consumo de APIs externas e resiliência.
+                    </p>
+                    <div class="flex gap-2 mt-auto">
+                        <span class="inline-flex items-center rounded-md bg-gray-800 px-2 py-1 text-xs font-medium text-gray-300 ring-1 ring-inset ring-gray-700/50">Integration</span>
+                        <span class="inline-flex items-center rounded-md bg-gray-800 px-2 py-1 text-xs font-medium text-gray-300 ring-1 ring-inset ring-gray-700/50">Backend</span>
+                    </div>
+                </a>
+                <!-- FIM PROJETO 2 -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="border-t border-gray-800 bg-gray-950 mt-auto">
+        <div class="max-w-4xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-gray-500">
+                &copy; <span id="year"></span> João Roberto Pereira.
+            </p>
+            
+            <div class="flex items-center gap-6">
+                <a href="https://github.com/joaorobertopereira" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-100 transition-colors" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/joao-roberto-pereira/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-accent transition-colors" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Atualiza o ano no rodapé automaticamente
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
